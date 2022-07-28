@@ -1,0 +1,211 @@
+body{
+  min-height: 100vh; /*the minimum height would be 100vh, but can increase if i add more content below*/
+  max-width: 100vw; /*cant go beyond 100vw no matter what as thats the maximum width length*/
+  display: grid;
+  margin: 0;
+  padding: 150px 150px 100px 150px;
+  box-sizing: border-box;
+  background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg'); /*the comma inbetween allows me to add many background images*/
+  background-position: top left, bottom right; /*allows me to change the positions of the images, the left side of the comma is for the top image and the right is for the bottom image*/
+  background-size: 700px, 1100px; /*allows me to change the size of background images, auto for first one and 77- pixels for second one*/
+  background-repeat: no-repeat; /*prevents an image from repeating*/
+  font-size: 15px;
+  font-family: 'League Spartan', Montserrat;
+}
+
+h1{
+  color:  hsl(300, 43%, 22%) ;
+  text-align: left;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-row-gap: 60px;
+}
+
+.second-container{
+  display: flex;
+  height: 100%;
+}
+
+.item-1{
+  width: 50%;
+  height: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.first-paraagraph{
+  width: 440px;
+}
+
+.item-2{
+  width: 50%;
+  height: 100%;
+  flex: 1;
+  display: grid;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.item-2-container{
+  height: auto;
+  width: fit-content;
+  /* margin-bottom: 200px; */
+}
+
+.item-3{
+  height:auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.first-para{
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  width: 500px;
+}
+
+.review-text, .report-guru-text, .best-tech-text{
+
+}
+
+
+.rating{
+  display: flex;
+  /* width: 200px; */
+  height: 60px;
+  border-radius: 10px;
+  background-color: hsl(300, 24%, 96%);
+  align-items: center;
+  width: 400px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.rating-two{
+  margin-left: 70px;
+}
+
+.rating-three{
+  margin-left: 130px;
+}
+
+.stars, .review-text{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.purple-rating{
+  height: 220px;
+  width: 320px; /*this means take up a third of the width*/
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.purple-rating-1{
+  margin-right: 50px;
+}
+
+.purple-rating-2{
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.purple-rating-3{
+  margin-top: 40px;
+}
+
+.Verified-buyer{
+  margin-top: 0;
+}
+
+.name{
+  margin-bottom: 5px;
+}
+
+.name-div{
+  margin-left: 20px;
+  width: fit-content;
+}
+
+.name-and-pic{
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.icon{
+  border-radius: 50px;
+  max-height: 50px;
+}
+
+.Verified-buyer{
+  color: hsl(333, 80%, 67%);
+}
+
+@media (max-width: 600px) {
+body{
+  padding: 60px 60px;
+  display: grid;
+}
+
+h1{
+  font-size: 3rem;
+  justify-self: center;
+  text-align: center;
+  width: 350px;
+  margin-left: 20px;
+}
+
+.item-2{
+  margin-top: 40px ;
+}
+
+.rating{
+  flex-flow: column;
+}
+
+.first-para{
+  font-size: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+  .second-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.purple-rating{
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+ .rating-one, .rating-two, .rating-three{
+   margin-left: 0;
+ }
+
+ .item-3{
+   display: flex;
+   flex-flow:column;
+ }
+
+}
